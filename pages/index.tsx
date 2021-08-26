@@ -2,39 +2,9 @@ import { useState } from 'react';
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import {languages,themes} from '../components/AceEdit/constants'
 import styles from '../styles/Home.module.css'
 const AceEdit=dynamic(()=>import('../components/AceEdit'),{ssr:false});
-
-const languages = [
-  "javascript",
-  "java",
-  "python",
-  "xml",
-  "ruby",
-  "sass",
-  "markdown",
-  "mysql",
-  "json",
-  "html",
-  "handlebars",
-  "golang",
-  "csharp",
-  "elixir",
-  "typescript",
-  "css"
-];
- const themes = [
-  "monokai",
-  "github",
-  "tomorrow",
-  "kuroir",
-  "twilight",
-  "xcode",
-  "textmate",
-  "solarized_dark",
-  "solarized_light",
-  "terminal"
-];
 
 const defaultValue = `function sayHi() {
   console.log("hello world");

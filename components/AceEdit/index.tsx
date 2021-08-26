@@ -2,37 +2,9 @@
 import React from "react";
 import type { IAceEditorProps } from 'react-ace';
 import dynamic from 'next/dynamic'
+import {languages,themes} from './constants'
 
- const languages = [
-  "javascript",
-  "java",
-  "python",
-  "xml",
-  "ruby",
-  "sass",
-  "markdown",
-  "mysql",
-  "json",
-  "html",
-  "handlebars",
-  "golang",
-  "csharp",
-  "elixir",
-  "typescript",
-  "css"
-];
- const themes = [
-  "monokai",
-  "github",
-  "tomorrow",
-  "kuroir",
-  "twilight",
-  "xcode",
-  "textmate",
-  "solarized_dark",
-  "solarized_light",
-  "terminal"
-];
+
 const AceEditor = dynamic(async () => {
   const ace = await import('react-ace');
   languages.forEach(lang => {
