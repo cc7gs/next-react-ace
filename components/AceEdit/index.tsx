@@ -3,7 +3,7 @@ import React from "react";
 import type { IAceEditorProps } from 'react-ace';
 import dynamic from 'next/dynamic'
 
-export const languages = [
+ const languages = [
   "javascript",
   "java",
   "python",
@@ -21,7 +21,7 @@ export const languages = [
   "typescript",
   "css"
 ];
-export const themes = [
+ const themes = [
   "monokai",
   "github",
   "tomorrow",
